@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- code -->
+    <link href="/cheets/prism.css" rel="stylesheet" />
+    <!-- fornt awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- title -->
+    <title>JavaScript Cheatsheet</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/XCoder/index.html"><i class="fa-solid fa-mug-saucer fa-2x"></i> XCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/XCoder/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/XCoder/submit.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/XCoder/notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Discord Bots</a></li>
+                            <li><a class="dropdown-item" href="#">Web development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://discord.gg/A6dzzyan4v">Our Discord</a></li>
+                        </ul>
+                    </li>
+                    <a class="btn btn-outline-light" href="https://discord.gg/A6dzzyan4v" role="button"> Our Discord</a>
+                    <!-- <button type="button" class="btn btn-outline-light me-2 btn-sm" data-bs-toggle="modal"
+            data-bs-target="#LoginModal">Login</button>
+          <button type="button" class="btn btn-outline-light me-2 btn-sm" data-bs-toggle="modal"
+            data-bs-target="#SignupModal">Signup</button> -->
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- blog -->
+
+    <section>
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+
+                <div class="jsx-1794874986 container w-full md:max-w-4xl mx-auto pt-2" style="height: auto !important;">
+                    <div class="jsx-1794874986 w-full px-4 md:px-6 text-xl text-gray-800 leading-normal"
+                        style="height: auto !important;">
+                        <div class="jsx-1794874986 font-sans">
+                            <h1
+                                class="jsx-1794874986 font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                                JavaScript Cheatsheet</h1>
+                            <p class="jsx-1794874986 text-sm md:text-base font-normal text-gray-600">Published
+                                <!-- -->May 31 2022
+                            </p>
+                        </div>
+                        <div id="panels" class="jsx-1794874986 py-6 break-words" style="height: auto !important;">
+                            <h2>JavaScript Basics</h2>
+                            <p>Set of JavaScript basic syntax to add, execute and write basic programming paradigms in
+                                Javascript&nbsp;</p>
+                            <h3>On Page Script</h3>
+                            <p>Adding internal JavaScript to HTML</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-markup" tabindex="0"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"> <span class="token comment">//JS code goes here </span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+                    </code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>External JS File</h3>
+                            <p>Adding external JavaScript to HTML</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-markup"
+                                    tabindex="0"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>filename.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Functions</h3>
+                            <p>JavaScript Function syntax</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">nameOfFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// function body </span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>DOM Element</h3>
+                            <p>Changing content of a DOM Element</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"elementID"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">"Hello World!"</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Output</h3>
+                            <p>This will print the value of a in JavaScript console</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Conditional Statements</h2>
+                            <p>Conditional statements are used to perform operations based on some conditions.</p>
+                            <h3>If Statement</h3>
+                            <p>The block of code to be executed, when the condition specified is true.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// block of code to be executed if the condition is true</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>If-else Statement</h3>
+                            <p>If the condition for the if block is false, then the else block will be executed.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// block of code to be executed if the condition is true</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// block of code to be executed if the condition is false</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Else-if Statement</h3>
+                            <p>A basic if-else ladder</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// block of code to be executed if condition1 is true</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// block of code to be executed if the condition1 is false and condition2 is true</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// block of code to be executed if the condition1 is false and condition2 is false</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Switch Statement</h3>
+                            <p>Switch case statement in JavaScript</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">switch</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">case</span> x<span class="token operator">:</span>
+                            <span class="token comment">// code block</span>
+                            <span class="token keyword">break</span><span class="token punctuation">;</span>
+                        <span class="token keyword">case</span> y<span class="token operator">:</span>
+                            <span class="token comment">// code block</span>
+                            <span class="token keyword">break</span><span class="token punctuation">;</span>
+                        <span class="token keyword">default</span><span class="token operator">:</span>
+                            <span class="token comment">// code block</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p></p>
+
+                            <p></p>
+                            <h2>Iterative Statements (Loops)</h2>
+                            <p>Iterative statement facilitates programmer to execute any block of code lines repeatedly
+                                and can be controlled as per conditions added by the programmer.</p>
+                            <h3>For Loop</h3>
+                            <p>For loop syntax in javascript</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialization<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> incrementation<span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// code block to be executed</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p>Example:</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        text <span class="token operator">+=</span> <span class="token string">"Iteration number: "</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"&lt;br&gt;"</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>While Loop</h3>
+                            <p>Runs the code till the specified condition is true</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// code block to be executed</span>
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Do While Loop</h3>
+                            <p>A do while loop is executed at least once despite the condition being true or false</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token keyword">do</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// run this code in block</span>
+                        i<span class="token operator">++</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Strings</h2>
+                            <p>The string is a sequence of characters that is used for storing and managing text data.
+                            </p>
+                            <h3>charAt method</h3>
+                            <p>Returns the character from the specified index.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>concat method</h3>
+                            <p>Joins two or more strings together.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str1<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>index of method</h3>
+                            <p>Returns the index of the first occurrence of the specified character from the string else
+                                -1 if not found.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'substr'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>match method</h3>
+                            <p>Searches a string for a match against a regular expression.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(chapter \d+(\.\d)*)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">i</span></span><span class="token punctuation">;</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>replace method</h3>
+                            <p>Searches a string for a match against a specified string or char and returns a new string
+                                by replacing the specified values.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str1<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>search method</h3>
+                            <p>Searches a string against a specified value.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span><span class="token string">'term'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>split method</h3>
+                            <p>Splits a string into an array consisting of substrings.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>substring method</h3>
+                            <p>Returns a substring of a string containing characters from the specified indices.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p></p>
+                            
+                            <p></p>
+                            <h2>Arrays</h2>
+                            <p>The array is a collection of data items of the same type. In simple terms, it is a
+                                variable that contains multiple values.</p>
+                            <h3>variable</h3>
+                            <p>Containers for storing data.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token keyword">var</span> fruit <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"element1"</span><span class="token punctuation">,</span> <span class="token string">"element2"</span><span class="token punctuation">,</span> <span class="token string">"element3"</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>concat method</h3>
+                            <p>Joins two or more arrays together.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">concat</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>indexOf method</h3>
+                            <p>Returns the index of the specified item from the array.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>join method</h3>
+                            <p>Converts the array elements to a string.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>pop method</h3>
+                            <p>Deletes the last element of the array.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>reverse method</h3>
+                            <p>This method reverses the order of the array elements.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>sort method</h3>
+                            <p>Sorts the array elements in a specified manner.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>toString method</h3>
+                            <p>Converts the array elements to a string.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>valueOf method</h3>
+                            <p>returns the relevant Number Object holding the value of the argument passed</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Number Methods</h2>
+                            <p>JS math and number objects provide several constant and methods to perform mathematical
+                                operations.</p>
+                            <h3>toExponential method</h3>
+                            <p>Converts a number to its exponential form.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">toExponential</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>toPrecision method</h3>
+                            <p>Formats a number into a specified length.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">toPrecision</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>toString method</h3>
+                            <p>Converts an object to a string</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>valueOf method</h3>
+                            <p>Returns the primitive value of a number.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Maths Methods</h2>
+                            <h3>ceil method</h3>
+                            <p>Rounds a number upwards to the nearest integer, and returns the result</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">ceil</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>exp method</h3>
+                            <p>Returns the value of E^x.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">exp</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>log method</h3>
+                            <p>Returns the logarithmic value of x.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>pow method</h3>
+                            <p>Returns the value of x to the power y.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">pow</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>random method</h3>
+                            <p>Returns a random number between 0 and 1.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>sqrt method</h3>
+                            <p>Returns the square root of a number x</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">sqrt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p></p>
+
+                            <p></p>
+                            <h2>Dates</h2>
+                            <p>Date object is used to get the year, month and day. It has methods to get and set day,
+                                month, year, hour, minute, and seconds.</p>
+                            <h3>Pulling Date from the Date object</h3>
+                            <p>Returns the date from the date object</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Pulling Day from the Date object</h3>
+                            <p>Returns the day from the date object</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Pulling Hours from the Date object</h3>
+                            <p>Returns the hours from the date object</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">getHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Pulling Minutes from the Date object</h3>
+                            <p>Returns the minutes from the date object</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Pulling Seconds from the Date object</h3>
+                            <p>Returns the seconds from the date object</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">getSeconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Pulling Time from the Date object</h3>
+                            <p>Returns the time from the date object</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Mouse Events</h2>
+                            <p>Any change in the state of an object is referred to as an Event. With the help of JS, you
+                                can handle events, i.e., how any specific HTML tag will work when the user does
+                                something.</p>
+                            <h3>click</h3>
+                            <p>Fired when an element is clicked</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>oncontextmenu</h3>
+                            <p>Fired when an element is right-clicked</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'contextmenu'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>dblclick</h3>
+                            <p>Fired when an element is double-clicked</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'dblclick'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>mouseenter</h3>
+                            <p>Fired when an element is entered by the mouse arrow</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mouseenter'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>mouseleave</h3>
+                            <p>Fired when an element is exited by the mouse arrow</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mouseleave'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>mousemove</h3>
+                            <p>Fired when the mouse is moved inside the element</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mousemove'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Keyboard Events</h2>
+                            <h3>keydown</h3>
+                            <p>Fired when the user is pressing a key on the keyboard</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'keydown'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>keypress</h3>
+                            <p>Fired when the user presses the key on the keyboard</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'keypress'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>keyup</h3>
+                            <p>Fired when the user releases a key on the keyboard</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">element<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'keyup'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed when the event is fired</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p></p>
+                            
+                            <p></p>
+                            <h2>Errors</h2>
+                            <p>Errors are thrown by the compiler or interpreter whenever they find any fault in the
+                                code, and it can be of any type like syntax error, run-time error, logical error, etc.
+                                JS provides some functions to handle the errors.</p>
+                            <h3>try and catch</h3>
+                            <p>Try the code block and execute catch when err is thrown</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+                        Block <span class="token keyword">of</span> code to <span class="token keyword">try</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Block <span class="token keyword">of</span> code to handle errors
+                    <span class="token punctuation">}</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Window Methods</h2>
+                            <p>Methods that are available from the window object</p>
+                            <h3>alert method</h3>
+                            <p>Used to alert something on the screen</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>blur method</h3>
+                            <p>The blur() method removes focus from the current window.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">blur</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>setInterval</h3>
+                            <p>Keeps executing code at a certain interval</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>setTimeout</h3>
+                            <p>Executes the code after a certain interval of time</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// Code to be executed</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>close</h3>
+                            <p>The Window. close() method closes the current window</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">window<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>confirm</h3>
+                            <p>The window.confirm() instructs the browser to display a dialog with an optional message,
+                                and to wait until the user either confirms or cancels</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">window<span class="token punctuation">.</span><span class="token function">confirm</span><span class="token punctuation">(</span><span class="token string">'Are you sure?'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>open</h3>
+                            <p>Opens a new window</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"https://www.codewithharry.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>prompt</h3>
+                            <p>Prompts the user with a text and takes a value. Second parameter is the default value</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"What is your name?"</span><span class="token punctuation">,</span> <span class="token string">"Harry"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>scrollBy</h3>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">window<span class="token punctuation">.</span><span class="token function">scrollBy</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Scroll 100px to the right</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>scrollTo</h3>
+                            <p>Scrolls the document to the specified coordinates.</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">window<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Scroll to horizontal position 500</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>clearInterval</h3>
+                            <p>Clears the setInterval. var is the value returned by setInterval call</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">clearInterval</span><span class="token punctuation">(</span><span class="token keyword">var</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>clearTimeout</h3>
+                            <p>Clears the setTimeout. var is the value returned by setTimeout call</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">clearTimeout</span><span class="token punctuation">(</span><span class="token keyword">var</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>stop</h3>
+                            <p>Stops the further resource loading</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript"><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p></p>
+                            
+                            <p></p>
+                            <h2>Query/Get Elements</h2>
+                            <p>The browser creates a DOM (Document Object Model) whenever a web page is loaded, and with
+                                the help of HTML DOM, one can access and modify all the elements of the HTML document.
+                            </p>
+                            <h3>querySelector</h3>
+                            <p>Selector to select first matching element</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'css-selectors'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>querySelectorAll</h3>
+                            <p>A selector to select all matching elements</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'css-selectors'</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>getElementsByTagName</h3>
+                            <p>Select elements by tag name</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'element-name'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>getElementsByClassName</h3>
+                            <p>Select elements by class name</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'class-name'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>Get Element by Id</h3>
+                            <p>Select an element by its id</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h2>Creating Elements</h2>
+                            <p>Create new elements in the DOM</p>
+                            <h3>createElement</h3>
+                            <p>Create a new element</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <h3>createTextNode</h3>
+                            <p>Create a new text node</p>
+                            <div class="code-toolbar">
+                                <pre class=" language-javascript"
+                                    tabindex="0"><code class=" language-javascript">document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">'some text here'</span><span class="token punctuation">)</span></code></pre>
+                                <div class="toolbar">
+                                    <div class="toolbar-item"><button class="copy-to-clipboard-button" type="button"
+                                            data-copy-state="copy"><span>Copy</span></button></div>
+                                </div>
+                            </div>
+                            <p>&nbsp;</p>
+                            <div><a class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center my-3"
+                                    role="button"
+                                    href="https://api.codewithharry.com/media/blogFiles/javascript-cheatsheet/JavaScript_Cheatsheet_CodeWithHarry.pdf"
+                                    target="_blank" rel="noopener"> Download this Cheatsheet</a></div>
+                        </div>
+                    </div>
+                   
+            </div>
+            <div class="col-sm-2"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <span class="ml-3 text-xl"> <i class="fa-solid fa-mug-saucer fa-2x"></i>XCoder</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2020
+                XCoder —
+                <a href="" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@MohitShedge</a>
+            </p>
+
+            </a>
+            </span>
+        </div>
+    </footer>
+    <!-- Code -->
+    <script src="/cheets/prism.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!---
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   -->
+</body>
+
+</html>
